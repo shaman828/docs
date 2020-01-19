@@ -1,0 +1,746 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dapper&Sqlite · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../mysql/readme.html" />
+    
+    
+    <link rel="prev" href="1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../readme.html">
+            
+                <a href="../readme.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    01.Sqlite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    常用问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    Dapper&Sqlite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../mysql/readme.html">
+            
+                <a href="../mysql/readme.html">
+            
+                    
+                    02.Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" >
+            
+                <span>
+            
+                    
+                    todo
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../wpf/wpf-readme.html">
+            
+                <a href="../../wpf/wpf-readme.html">
+            
+                    
+                    WPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../wpf/00/1.html">
+            
+                <a href="../../wpf/00/1.html">
+            
+                    
+                    00.准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../code/readme.html">
+            
+                <a href="../../code/readme.html">
+            
+                    
+                    代码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../code/nlog.html">
+            
+                <a href="../../code/nlog.html">
+            
+                    
+                    01.日志组件-NLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Dapper&Sqlite</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="dapper&#x3000;&#x3000;sqlite">Dapper&#x3000;&amp;&amp;&#x3000;Sqlite</h2>
+<ul>
+<li>&#x5355;&#x4F8B;&#xFF0B;&#x8BFB;&#x5199;&#x9501;&#x89E3;&#x51B3;<strong>&#x975E;&#x5355;&#x5199;&#x591A;&#x8BFB;</strong>&#x65F6;&#x9501;&#x5E93;&#x98CE;&#x9669;</li>
+<li>&#x81EA;&#x52A8;&#x6279;&#x91CF;&#x5199;&#x5165;&#x4E14;&#x5F00;&#x542F;&#x4E8B;&#x52A1;&#x63D0;&#x5347;&#x5199;&#x5165;&#x6548;&#x7387;</li>
+<li>&#x4E00;&#x6B21;&#x6027;&#x5199;&#x5165;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x9650;&#x5B9A;</li>
+</ul>
+<pre><code class="lang-csharp">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SqliteDataCommand</span>
+    {
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x6279;&#x91CF;&#x5199;&#x5165;&#x65F6;&#xFF0C;&#x6BCF;&#x6B21;&#x4E0A;&#x9650;&#x6570;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> MaxRows = <span class="hljs-number">1000</span>;
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> &#x6784;&#x9020;</span>
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">SqliteDataCommand</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-comment">//todo</span>
+            conStr = <span class="hljs-string">&quot;&quot;</span>;
+        }
+
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span> &#x6784;&#x9020;</span>
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> &#x5B57;&#x6BB5;</span>
+
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">readonly</span> <span class="hljs-keyword">object</span> LockHelper = <span class="hljs-keyword">new</span> <span class="hljs-keyword">object</span>();
+
+        <span class="hljs-keyword">readonly</span> ReaderWriterLockSlim readerWriterLockSlim = <span class="hljs-keyword">new</span> ReaderWriterLockSlim();
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> SqliteDataCommand instance = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> conStr;
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x8D85;&#x65F6;&#x65F6;&#x95F4;(&#x6BEB;&#x79D2;)</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> timeOutSecond = <span class="hljs-number">5</span> * <span class="hljs-number">1000</span>;
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span> &#x5B57;&#x6BB5;</span>
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> &#x516C;&#x5171;&#x5C5E;&#x6027;</span>
+
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span> &#x516C;&#x5171;&#x5C5E;&#x6027;</span>
+
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">region</span> &#x516C;&#x5171;&#x65B9;&#x6CD5;</span>
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> SqliteDataCommand <span class="hljs-title">GetInstance</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (instance == <span class="hljs-keyword">null</span>)
+            {
+                <span class="hljs-keyword">lock</span> (LockHelper)
+                {
+                    instance = instance ?? <span class="hljs-keyword">new</span> SqliteDataCommand();
+                }
+            }
+            <span class="hljs-keyword">return</span> instance;
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x63D2;&#x5165;&#xFF0C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;remarks&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x53C2;&#x6570;&#x81EA;&#x52A8;&#x5339;&#x914D;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/remarks&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;example&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> insert in tab (col1,col2,...) values (@col1,@col2,..)</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/example&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;typeparam name=&quot;T&quot;&gt;</span>&#x53C2;&#x6570;&#x7C7B;&#x578B;<span class="hljs-doctag">&lt;/typeparam&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;sql&quot;&gt;</span>sql<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;data&quot;&gt;</span><span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span><span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> ExecuteNonQuery&lt;T&gt;(<span class="hljs-keyword">string</span> sql, T data = <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">where</span> T : <span class="hljs-keyword">class</span>
+        {
+            <span class="hljs-keyword">int</span> rows = <span class="hljs-number">0</span>;
+            SQLiteTransaction tran = <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterWriteLock(timeOutSecond);
+
+                <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr))
+                {
+                    con.Open();
+                    <span class="hljs-keyword">if</span> (data != <span class="hljs-keyword">null</span>)
+                    {
+                        <span class="hljs-keyword">if</span> (data <span class="hljs-keyword">is</span> IEnumerable&lt;<span class="hljs-keyword">object</span>&gt; items &amp;&amp; items.Count() &gt; <span class="hljs-number">1</span>)
+                        {
+                            <span class="hljs-keyword">try</span>
+                            {
+                                tran = con.BeginTransaction();
+                                <span class="hljs-keyword">var</span> rowCount = items.Count();
+                                <span class="hljs-keyword">if</span> (rowCount &lt;= MaxRows)
+                                {
+                                    rows = con.Execute(sql, data, tran);
+                                }
+                                <span class="hljs-keyword">else</span>
+                                {
+                                    <span class="hljs-keyword">var</span> times = rowCount % MaxRows == <span class="hljs-number">0</span> ? rowCount / MaxRows : rowCount / MaxRows + <span class="hljs-number">1</span>;
+                                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index = <span class="hljs-number">0</span>; index &lt; times; index++)
+                                    {
+                                        <span class="hljs-keyword">var</span> onceData = items.Skip(index * MaxRows).Take(MaxRows);
+                                        <span class="hljs-keyword">if</span> (onceData.Any())
+                                        {
+                                            rows += con.Execute(sql, onceData, tran);
+                                        }
+
+                                    }
+                                }
+
+                                tran.Commit();
+                            }
+                            <span class="hljs-keyword">catch</span> (Exception e)
+                            {
+                                <span class="hljs-keyword">try</span>
+                                {
+                                    tran?.Rollback();
+                                }
+                                <span class="hljs-keyword">catch</span>
+                                {
+                                    Logger.Default.Error(<span class="hljs-string">&quot;sql Error&quot;</span>, e);
+                                    <span class="hljs-keyword">throw</span> e;
+                                }
+                            }
+                        }
+                        <span class="hljs-keyword">else</span>
+                        {
+                            rows = con.Execute(sql, data);
+                        }
+
+                    }
+                    <span class="hljs-keyword">else</span>
+                    {
+                        rows = con.Execute(sql);
+                    }
+                }
+
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                tran?.Rollback();
+                <span class="hljs-keyword">throw</span> ex;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitWriteLock();
+            }
+
+            <span class="hljs-keyword">return</span> rows;
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x63D2;&#x5165;&#xFF0C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;remarks&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x5DF2;&#x5F00;&#x542F;&#x4E8B;&#x52A1;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/remarks&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;sqls&quot;&gt;</span><span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span><span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">ExecuteNonQuery</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">string</span>[] sqls</span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (!sqls.Any() || sqls.All(<span class="hljs-keyword">string</span>.IsNullOrEmpty))
+            {
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+
+            <span class="hljs-keyword">int</span> rows = <span class="hljs-number">0</span>;
+            SQLiteTransaction tran = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterWriteLock(timeOutSecond);
+
+                <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr))
+                {
+                    con.Open();
+                    tran = con.BeginTransaction();
+                    <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">string</span> sql <span class="hljs-keyword">in</span> sqls)
+                    {
+                        rows += con.Execute(sql, tran);
+                    }
+                    tran.Commit();
+                }
+
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                tran?.Rollback();
+                <span class="hljs-keyword">throw</span> ex;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitWriteLock();
+            }
+
+            <span class="hljs-keyword">return</span> rows;
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x6267;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x6240;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x5217;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x5FFD;&#x7565;&#x5176;&#x4ED6;&#x884C;&#x6216;&#x5217;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;object&#x7C7B;&#x578B;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;sql&quot;&gt;</span>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;param&quot;&gt;</span>&#x53C2;&#x6570;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;isQuery&quot;&gt;</span>&#x662F;&#x5426;&#x4E3A;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span><span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-keyword">public</span> T ExecuteScalar&lt;T&gt;(<span class="hljs-keyword">string</span> sql, <span class="hljs-keyword">object</span> param = <span class="hljs-keyword">null</span>, <span class="hljs-keyword">bool</span> isQuery = <span class="hljs-keyword">true</span>)
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">if</span> (isQuery)
+                {
+                    readerWriterLockSlim.TryEnterReadLock(timeOutSecond);
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    readerWriterLockSlim.TryEnterWriteLock(timeOutSecond);
+                }
+                <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr))
+                {
+                    <span class="hljs-keyword">var</span> ret = con.ExecuteScalar&lt;T&gt;(sql, param);
+                    <span class="hljs-keyword">return</span> ret;
+                }
+
+            }
+            <span class="hljs-keyword">catch</span> (Exception e)
+            {
+                <span class="hljs-keyword">throw</span> e;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                <span class="hljs-keyword">if</span> (isQuery)
+                {
+                    readerWriterLockSlim.ExitReadLock();
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    readerWriterLockSlim.ExitWriteLock();
+                }
+            }
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x67E5;&#x8BE2;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;example&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> select * from tableName where colName=@colName&quot;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/example&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;typeparam name=&quot;T&quot;&gt;</span>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<span class="hljs-doctag">&lt;/typeparam&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;sql&quot;&gt;</span>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;param&quot;&gt;</span>&#x53C2;&#x6570;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span><span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-keyword">public</span> IEnumerable&lt;T&gt; Query&lt;T&gt;(<span class="hljs-keyword">string</span> sql, <span class="hljs-keyword">object</span> param = <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">where</span> T : <span class="hljs-keyword">class</span>
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterReadLock(timeOutSecond);
+                <span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr);
+                IEnumerable&lt;T&gt; ret = con.Query&lt;T&gt;(sql, param);
+                <span class="hljs-keyword">return</span> ret;
+            }
+            <span class="hljs-keyword">catch</span> (Exception e)
+            {
+                <span class="hljs-keyword">throw</span> e;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitReadLock();
+            }
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x67E5;&#x8BE2;</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;typeparam name=&quot;T&quot;&gt;</span>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<span class="hljs-doctag">&lt;/typeparam&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;sql&quot;&gt;</span>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name=&quot;param&quot;&gt;</span>&#x53C2;&#x6570;<span class="hljs-doctag">&lt;/param&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span>&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x884C;&#x6570;&#x636E;<span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-keyword">public</span> T QueryFirstOrDefault&lt;T&gt;(<span class="hljs-keyword">string</span> sql, <span class="hljs-keyword">object</span> param = <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">where</span> T : <span class="hljs-keyword">class</span>
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterReadLock(timeOutSecond);
+                <span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr);
+                T ret = con.QueryFirstOrDefault&lt;T&gt;(sql, param);
+                <span class="hljs-keyword">return</span> ret;
+            }
+            <span class="hljs-keyword">catch</span> (Exception e)
+            {
+                <span class="hljs-keyword">throw</span> e;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitReadLock();
+            }
+        }
+
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x67E5;&#x8BE2;&#x8FD4;&#x56DE;DataTable</span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+        <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;returns&gt;</span><span class="hljs-doctag">&lt;/returns&gt;</span></span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> DataTable <span class="hljs-title">QueryForDataTable</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> sql</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterReadLock(timeOutSecond);
+                DataTable dt = <span class="hljs-keyword">new</span> DataTable();
+                <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr))
+                {
+                    dt.Load(con.ExecuteReader(sql));
+                }
+
+                <span class="hljs-keyword">return</span> dt;
+            }
+            <span class="hljs-keyword">catch</span> (Exception e)
+            {
+                <span class="hljs-keyword">throw</span> e;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitReadLock();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">QueryMultiple</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> sql, Action&lt;SqlMapper.GridReader&gt; callBack</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                readerWriterLockSlim.TryEnterReadLock(timeOutSecond);
+                <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> con = <span class="hljs-keyword">new</span> SQLiteConnection(conStr))
+                {
+                    <span class="hljs-keyword">var</span> reader = con.QueryMultiple(sql);
+                    callBack(reader);
+                }
+            }
+            <span class="hljs-keyword">catch</span> (Exception e)
+            {
+                <span class="hljs-keyword">throw</span> e;
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                readerWriterLockSlim.ExitReadLock();
+            }
+        }
+        <span class="hljs-meta">#<span class="hljs-meta-keyword">endregion</span> &#x516C;&#x5171;&#x65B9;&#x6CD5;</span>
+
+
+
+    }
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.html" class="navigation navigation-prev " aria-label="Previous page: 常用问题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../mysql/readme.html" class="navigation navigation-next " aria-label="Next page: 02.Mysql">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dapper&Sqlite","level":"1.2.1.2","depth":3,"next":{"title":"02.Mysql","level":"1.2.2","depth":2,"path":"db/mysql/readme.md","ref":"db/mysql/readme.md","articles":[{"title":"todo","level":"1.2.2.1","depth":3,"ref":"","articles":[]}]},"previous":{"title":"常用问题","level":"1.2.1.1","depth":3,"path":"db/sqlite/1.md","ref":"db/sqlite/1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"db/sqlite/2.md","mtime":"2020-01-14T08:30:47.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-15T02:38:16.944Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
